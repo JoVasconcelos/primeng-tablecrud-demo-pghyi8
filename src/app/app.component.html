@@ -60,7 +60,7 @@
   >
     <ng-template pTemplate="caption">
       <div class="p-d-flex p-ai-center p-jc-between">
-        <h5 class="p-m-0">Manage Product</h5>
+        <h5 class="p-m-0">{{teste}}</h5>
         <span class="p-input-icon-left">
           <i class="pi pi-search"></i>
           <input
@@ -77,20 +77,26 @@
         <th style="width: 3rem">
           <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
         </th>
-        <th pSortableColumn="name">
-          Name <p-sortIcon field="name"></p-sortIcon>
+        <th pSortableColumn="nome">
+          Nome <p-sortIcon field="nome"></p-sortIcon>
         </th>
-        <th pSortableColumn="price">
-          Price <p-sortIcon field="price"></p-sortIcon>
+        <th pSortableColumn="nascimento">
+          Nascimento <p-sortIcon field="nascimento"></p-sortIcon>
         </th>
-        <th pSortableColumn="category">
-          Category <p-sortIcon field="category"></p-sortIcon>
+        <th pSortableColumn="sexo">
+          Sexo <p-sortIcon field="sexo"></p-sortIcon>
         </th>
-        <th pSortableColumn="rating">
-          Reviews <p-sortIcon field="rating"></p-sortIcon>
+        <th pSortableColumn="altura">
+          Altura <p-sortIcon field="altura"></p-sortIcon>
         </th>
-        <th pSortableColumn="inventoryStatus">
-          Status <p-sortIcon field="inventoryStatus"></p-sortIcon>
+        <th pSortableColumn="peso">
+          Peso <p-sortIcon field="peso"></p-sortIcon>
+        </th>
+        <th pSortableColumn="observacao">
+          Observação <p-sortIcon field="observacao"></p-sortIcon>
+        </th>
+        <th pSortableColumn="numero">
+          Numero <p-sortIcon field="numero"></p-sortIcon>
         </th>
         <th></th>
       </tr>

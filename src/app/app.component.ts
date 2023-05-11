@@ -4,6 +4,7 @@ import { ProductService } from './productservice';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { PersonService } from './person.service';
+import { Person } from './person.model';
 
 @Component({
   selector: 'app-root',
@@ -24,11 +25,15 @@ export class AppComponent {
 
   products: Product[];
 
+  persons: Person[];
+
   product: Product;
 
   selectedProducts: Product[];
 
   submitted: boolean;
+
+  teste = 'teste';
 
   constructor(
     private productService: ProductService,
@@ -40,7 +45,8 @@ export class AppComponent {
   ngOnInit() {
     this.productService.getProducts().then((data) => (this.products = data));
     this.personService.getPersons().then((data) => {
-      console.log(data);
+      this.persons = data;
+      console.log(this.persons);
     });
   }
 
